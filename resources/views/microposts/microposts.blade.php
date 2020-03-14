@@ -1,6 +1,6 @@
 <ul class="media-list">
     @foreach ($microposts as $micropost)
-        <li class="media mb-3">
+        <li class="media mb-3 border">
             <img class="mr-2 rounded" src="{{ Gravatar::src($micropost->user->email, 50) }}" alt="">
             <div class="media-body">
                 <div>
@@ -9,7 +9,7 @@
                 <div>
                     <p class="mb-0">{!! nl2br(e($micropost->content)) !!}</p>
                 </div>
-                <div class="row">
+                <div class="row m-1">
                     <div class="col-xs-2">
                     @include('favorite_post.favorite_button', ['micropost' => $micropost])
                     </div>

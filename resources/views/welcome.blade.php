@@ -17,7 +17,7 @@
                 @endif
                 @if (count($microposts) > 0)
                     @include('microposts.microposts', ['microposts' => $microposts])
-                    <div style="border-bottom: 1px solid #e6ecf0;"></div>
+                    <div></div>
                 @endif
             </div>
         </div>
